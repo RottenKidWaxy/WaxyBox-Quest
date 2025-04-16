@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Waxy's Block Party - Final</title>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
-    <style>
-        body { margin: 0; background: black; }
-        canvas { display: block; margin: auto; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Waxy's Block Party</title>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+  <style>
+    body { margin: 0; background: #000; }
+    canvas { display: block; margin: auto; }
+  </style>
 </head>
 <body>
-    <script src="startscreen.js"></script>
-    <script src="level1.js"></script>
-    <script src="level2.js"></script>
-    <script src="level3.js"></script>
-    <script src="level4.js"></script>
-    <script src="level5.js"></script>
-    <script src="level6.js"></script>
-    <script src="level7.js"></script>
-    <script src="endcredits.js"></script>
-    <script>
-        const config = {
-            type: Phaser.AUTO,
-            width: 800,
-            height: 600,
-            physics: {
-                default: 'arcade',
-                arcade: {
-                    gravity: { y: 500 },
-                    debug: false
-                }
-            },
-            scene: [StartScreen, Level1, Level2, Level3, Level4, Level5, Level6, Level7, EndCredits]
-        };
-        const game = new Phaser.Game(config);
-    </script>
+  <script src="startscreen.js"></script>
+  <script src="level1.js"></script>
+  <script src="level2.js"></script>
+  <script src="level3.js"></script>
+  <script src="level4.js"></script>
+  <script src="level5.js"></script>
+  <script src="level6.js"></script>
+  <script src="level7.js"></script>
+  <script src="endcredits.js"></script>
+  <script>
+    const config = {
+      type: Phaser.AUTO,
+      width: 800,
+      height: 600,
+      physics: {
+        default: 'arcade',
+        arcade: { gravity: { y: 500 }, debug: false }
+      },
+      scene: [StartScreen, Level1, Level2, Level3, Level4, Level5, Level6, Level7, EndCredits]
+    };
+    const game = new Phaser.Game(config);
+  </script>
 </body>
 </html>
